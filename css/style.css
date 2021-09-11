@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  font-size: 70%;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  min-height: 65vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card-wrapper .card.card-sedan {
+  background-color: #e28525;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-wrapper .card.card-sedan button {
+  color: #e28525;
+}
+
+.card-wrapper .card.card-suv {
+  background-color: #016972;
+}
+
+.card-wrapper .card.card-suv button {
+  color: #016972;
+}
+
+.card-wrapper .card.card-luxury {
+  background-color: #00403f;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-wrapper .card.card-luxury button {
+  color: #00403f;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+main .card-wrapper .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 100%;
+  padding: 3rem;
+  background-color: #702121;
+}
+
+main .card-wrapper .card h1 {
+  color: #f2f2f2;
+  font-size: 2.6rem;
+  margin: 1rem 0rem 1rem 0rem;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+main .card-wrapper .card img {
+  width: 80px;
+}
+
+main .card-wrapper .card p {
+  font-size: 1rem;
+  line-height: 2;
+  color: rgba(243, 236, 236, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 6em;
+}
+
+main .card-wrapper .card button {
+  position: absolute;
+  bottom: 0;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1em 2em;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+main .card-wrapper .card button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  main .card-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+  }
+  main .card-wrapper .card.card-sedan {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  main .card-wrapper .card.card-luxury {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
